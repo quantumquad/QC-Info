@@ -8,8 +8,6 @@ You are absolutely right—**the electron and positron have exactly the same mas
 
 Let me correct and refine the explanation regarding the coefficients and why they were assigned different values in the earlier example:
 
----
-
 ### Corrected Explanation
 #### Why the Coefficients Were Different (0.5 and 0.3)?
 In the earlier example, the differing coefficients \( 0.5 \) and \( 0.3 \) **do not reflect a mass difference**. Instead, they were arbitrary weights chosen to differentiate the contributions from different qubits for simplicity and illustration. This does not correspond to physical reality.
@@ -22,8 +20,6 @@ For example:
 T_{\text{electron}} = T_{\text{positron}} = \frac{\hat{p}^2}{2m}
 \]
 This would result in **equal coefficients** for the terms associated with each particle in the qubit Hamiltonian.
-
----
 
 ### Updated 4-Qubit Hamiltonian Representation
 Let’s update the Hamiltonian terms to reflect **equal masses** and consistent contributions from the kinetic energy and potential energy.
@@ -58,8 +54,6 @@ for weight, pauli_term in hamiltonian_terms:
     print(f"{weight:.3f} * {pauli_term}")
 ```
 
----
-
 ### Explanation of the Updated Terms
 
 #### **Kinetic Energy Terms**:
@@ -74,14 +68,10 @@ for weight, pauli_term in hamiltonian_terms:
 #### **Off-Diagonal Terms**:
 - `"XXII"`, `"IXXI"`, and `"IIXX"` introduce quantum tunneling or state transitions, modeling coherence in the system.
 
----
-
 ### Why the Coefficients Should Be Equal for the Same Mass?
 Since both particles have identical masses:
 1. Their **kinetic energy terms** contribute equally to the Hamiltonian.
 2. There is no reason to introduce asymmetry unless modeling a specific scenario where their interactions or environment differ.
-
----
 
 ### Conclusion
 The updated Hamiltonian now reflects:
