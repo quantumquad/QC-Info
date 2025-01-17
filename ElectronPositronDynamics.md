@@ -2,7 +2,7 @@
 
 ---
 
-Electron Positron Hamiltonian
+## Electron Positron Hamiltonian
 
 Below is a Python representation of a 4-qubit Hamiltonian based on the example in **2. above**, with increasing precision as more qubits are added. This example captures the kinetic and potential energy terms for a simplified two-particle system (electron and positron) in a discrete 1D model.
 
