@@ -472,4 +472,88 @@ Momentum Measurement: Apply QFT to transform the state into the momentum basis a
 
 This approach ensures that you can extract and interpret continuous values for both position and momentum from the quantum measurements.
 
+## Yet another version ...
+
+You're absolutely right. The position and momentum are continuous variables, and the values can indeed be anywhere between 0 and 1 (or other ranges, depending on the encoding). Let's address how to measure and extract continuous values for position and momentum.
+
+### Measuring Continuous Position and Momentum
+
+#### Position Measurement
+
+1. **Amplitude Encoding**: In quantum computing, the position can be encoded in the amplitude of the qubit states.
+2. **Extracting Amplitude**: To extract the position, we can use the probability distribution obtained from measurements and decode the amplitude.
+
+Here's the revised code for extracting continuous position values:
+
+```python
+import numpy as np
+from qiskit import QuantumCircuit, Aer, execute
+from qiskit.visualization import plot_histogram
+from qiskit.quantum_info import Statevector, density_matrix
+
+# Define the initial positions and momenta
+x1, y1 = 0.5, 0.5  # Position of Particle 1
+px1, py1 = 0.3, 0.7  # Momentum of Particle 1
+
+# Function to map positions and momenta to qubit states
+def state_to_qubit_state(x, y, px, py):
+    theta = np.arctan2(y, x)
+    phi = np.arctan2(py, px)
+    return [np.cos(theta/2), np.sin(theta/2) * np.exp(1j * phi)]
+
+# Initialize the quantum circuit with 2 qubits for simplicity
+qc = QuantumCircuit(2)
+
+# Map positions and momenta to qubit states
+state1 = state_to_qubit_state(x1, y1, px1, py1)
+qc.initialize(state1, [0, 1])  # Particle 1
+
+# Simulate the quantum circuit
+backend = Aer.get_backend('statevector_simulator')
+job = execute(qc, backend)
+result = job.result()
+statevector = result.get_statevector(qc)
+
+# Extract position from the statevector (amplitude encoding)
+probabilities = np.abs(statevector)**2
+positions = np.linspace(0, 1, len(probabilities))
+x_position = np.sum(positions * probabilities)
+
+print("Extracted Position:", x_position)
+```
+
+#### Momentum Measurement
+
+For momentum measurement, use the Quantum Fourier Transform (QFT) to transform the state into the momentum basis and then extract the continuous values:
+
+```python
+from qiskit.circuit.library import QFT
+
+# Create a QFT circuit for momentum measurement
+qft_circuit = QFT(2, do_swaps=False).inverse()
+
+# Combine the QFT circuit with the initial state circuit
+qc = QuantumCircuit(2)
+qc.initialize(state1, [0, 1])  # Particle 1
+qc.append(qft_circuit, [0, 1])
+
+# Simulate the quantum circuit
+job = execute(qc, backend)
+result = job.result()
+statevector = result.get_statevector(qc)
+
+# Extract momentum from the statevector (amplitude encoding)
+probabilities = np.abs(statevector)**2
+momenta = np.linspace(0, 1, len(probabilities))
+px_momentum = np.sum(momenta * probabilities)
+
+print("Extracted Momentum:", px_momentum)
+```
+
+### Summary
+
+1. **Position Measurement**: Use amplitude encoding to extract continuous position values from the statevector.
+2. **Momentum Measurement**: Apply QFT to transform the state into the momentum basis and extract continuous momentum values.
+
+This approach ensures that you can extract and interpret continuous values for both position and momentum from the quantum measurements. If you have any further questions or need more details, feel free to ask!
 
