@@ -1,7 +1,8 @@
-# Simulating an Electron and Position Orbiting System
+# Simulating an Electron and Positron Orbital System
 
 ## Representing Momentum (Kinetic Energy)
-To represent momentum, we need to include both position and momentum in our state representation. In quantum mechanics, position 
+To represent momentum, we need to include both position and momentum in our state representation.
+In quantum mechanics, position 
 𝑥
 ^
  and momentum 
