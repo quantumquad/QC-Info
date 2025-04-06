@@ -49,7 +49,7 @@ Let’s check the units:
 E = h f \Rightarrow [E] = (\text{J·s}) \cdot (1/\text{s}) = \text{J}
 \]
 
-Perfect! Units check out: energy in joules.
+Units check out: energy in joules.
 
 ---
 
@@ -290,3 +290,145 @@ This shows that increasing α would shrink the hydrogen atom — a stronger elec
 Even small changes in α would change the structure of atoms and the chemistry of life.
 
 ---
+
+
+---
+
+# Quantum Constants and Equations
+
+This document summarizes key quantum mechanical concepts and constants with units and examples.
+
+---
+
+## Planck’s Constant (h) and Reduced Planck’s Constant (ħ)
+
+```
+h = 6.62607015 × 10⁻³⁴ J·s  (exact, defined)
+ħ = h / (2π) ≈ 1.054571817 × 10⁻³⁴ J·s
+```
+
+Units:
+- `J·s` = `kg·m²/s`
+- Both `h` and `ħ` have the same units
+
+---
+
+## Planck’s Equation
+
+```
+E = h * f
+```
+
+Where:
+- `E` is energy (in joules, J)
+- `h` is Planck’s constant
+- `f` is frequency (in Hz or 1/s)
+
+### Units Check
+
+```
+[h] = J·s
+[f] = 1/s
+
+E = h * f => J·s * 1/s = J
+```
+
+---
+
+## Schrödinger Equation (Time-Independent)
+
+```
+- (ħ² / 2m) * (d²ψ / dx²) + V(x) * ψ = E * ψ
+```
+
+Where:
+- `ψ(x)` is the wavefunction
+- `ħ` is reduced Planck constant
+- `m` is the particle mass
+- `V(x)` is potential energy
+- `E` is total energy
+
+### Units of Kinetic Term
+
+```
+[ħ²] = (kg·m²/s)² = kg²·m⁴/s²
+[ħ² / m] = kg·m⁴/s²
+[d²/dx²] = 1/m²
+
+=> (ħ² / m) * (1/m²) = kg·m²/s² = J
+```
+
+Units match energy.
+
+---
+
+## Bohr Radius
+
+```
+a₀ = (4π ε₀ ħ²) / (m e²)
+```
+
+Where:
+- `ε₀` is vacuum permittivity
+- `ħ` is reduced Planck constant
+- `m` is the mass of the electron
+- `e` is the elementary charge
+
+### Units Check
+
+```
+[ħ²] = kg²·m⁴/s²
+[ε₀] = C²·s² / (kg·m³)
+[e²] = C²
+
+Numerator: ε₀ ħ² = (C²·s² / kg·m³) * (kg²·m⁴ / s²) = kg·m
+Denominator: m e² = kg·C²
+
+a₀ = kg·m / (kg·C² / C²) = m
+```
+
+### Value
+
+```
+a₀ ≈ 5.291772109 × 10⁻¹¹ m
+```
+
+Also expressed as:
+
+```
+a₀ = ħ / (m c α)
+```
+
+---
+
+## Fine-Structure Constant (α)
+
+```
+α = e² / (4π ε₀ ħ c) ≈ 1 / 137.035999
+```
+
+- **Dimensionless**
+- Appears in all electromagnetic interactions
+
+### Meaning
+
+- Governs the strength of the electromagnetic force
+- Appears in atomic structure, photon interactions, and QED
+- The speed of the electron in the Bohr model ground state is:
+
+```
+v = α * c
+```
+
+---
+
+## Summary
+
+- `h`, `ħ`: set the scale for quantum mechanics
+- `e`, `ε₀`: describe electric interactions
+- `c`: speed of light, linking to relativity
+- `α`: dimensionless measure of EM strength — a bridge between light, charge, and quantum behavior
+- Changing `α` would radically change chemistry and the stability of matter
+
+---
+
