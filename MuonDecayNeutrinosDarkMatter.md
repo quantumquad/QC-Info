@@ -330,10 +330,7 @@ Compared to the simplified version:
 
 This refined spectrum matches what is observed in precision experiments. It demonstrates just how well theoretical predictions from quantum field theory align with actual detector measurements, and how subtle corrections matter when testing the Standard Model to high precision.
 
-![detailed_michel_spectrum with electron_mass_effects](__images/detailed_michel_ spectrum_with_electron_mass_effects.png)
-
-![electron energy spectrum from muon decay at rest](__images/electron_energy_spectrum_from_muon_decay_at_rest.png)
-
+![detailed_michel_spectrum with electron_mass_effects](__images/detailed_michel_spectrum_with_electron_mass_effects.png)
 
 ## 3. Gamma Rays vs Neutrinos
 
