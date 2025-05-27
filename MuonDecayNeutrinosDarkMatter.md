@@ -223,9 +223,13 @@ an electron with 35 MeV of kinetic energy is highly relativistic, moving at more
 
 - The rest of the energy goes into the neutrinos, which escape detection in most experiments.
 
+The diagram below illustrates the electron energy spectrum from muon decay at rest
+
+![electron energy spectrum from muon decay at rest](__images/electron_energy_spectrum_from_muon_decay_at_rest.png)
+
 #### Michel spectrum
 
-This is a plot of the Michel spectrum, which describes the probability distribution of electron kinetic energy from muon decay at rest.
+Below is a plot of the Michel spectrum, which describes the probability distribution of electron kinetic energy from muon decay at rest.
 
 - The horizontal axis shows the electron kinetic energy (up to ~52.8 MeV).
 
@@ -241,7 +245,93 @@ As you can see:
 
 This curve captures the essence of three-body decay randomness under weak interaction dynamics. Let me know if you'd like to overlay the corresponding speed or Lorentz factor of the electron. 
 
-![electron energy spectrum from muon decay at rest](__images/electron_energy_spectrum_from_muon_decay_at_rest.png)
+The Michel spectrum is both:
+
+#### 1. Theoretically Derived
+
+It was originally calculated by Louis Michel in 1950 using:
+
+- The V–A theory of the weak interaction (vector minus axial vector),
+
+- Assumptions of muon decay at rest,
+
+- Neglecting the electron mass for simplicity (though more precise forms include it).
+
+The derivation predicts the shape of the energy spectrum for the electron (or positron) produced in muon decay:
+```
+𝑑
+Γ
+𝑑
+𝐸
+∝
+𝐸
+2
+(
+3
+−
+4
+𝐸
+𝐸
+max
+)
+(simplified form)
+dE
+dΓ
+​
+ ∝E 
+2
+ (3−4 
+E 
+max
+​
+ 
+E
+​
+ )(simplified form)
+```
+
+This comes from quantum field theory, applying Fermi’s Golden Rule to the decay matrix elements.
+
+#### 2. Experimentally Observed and Confirmed
+
+The Michel spectrum has been:
+
+-Measured with high precision in particle detectors,
+
+-Confirmed repeatedly in experiments going back to the 1950s and 60s (CERN, Fermilab, PSI, etc.),
+
+-Used as a standard candle for calibrating muon detectors.
+
+Modern experiments, like MEG, Mu3e, and Muon g−2, depend on this spectrum and have verified it in fine detail — including tiny deviations caused by:
+
+-Electron mass,
+
+-Radiative corrections,
+
+-Muon polarization effects,
+
+-Potential beyond-Standard-Model contributions.
+
+#### Summary
+
+- The Michel spectrum is a theoretical prediction from weak interaction physics.
+
+- It has been thoroughly confirmed by experimental data.
+
+- It provides a precise test of the Standard Model — and deviations from it would signal new physics.
+
+Here’s the more detailed Michel spectrum, which includes the effects of the electron’s mass (~0.511 MeV) in the calculation.
+
+Compared to the simplified version:
+
+- The spectrum starts slightly above zero rather than rising immediately — a subtle but real effect of the electron mass threshold.
+
+- The overall shape is similar, but more accurate, especially near the low- and high-energy endpoints.
+
+This refined spectrum matches what is observed in precision experiments. It demonstrates just how well theoretical predictions from quantum field theory align with actual detector measurements, and how subtle corrections matter when testing the Standard Model to high precision.
+
+
+
 
 
 ## 3. Gamma Rays vs Neutrinos
