@@ -1,5 +1,5 @@
 
-# Neutrinos, Muon Decay, and Dark Matter — ChatGPT Discussion
+# Neutrinos, Muon Decay, and Dark Matter
 
 ## 1. Muon Decay and Energy Distribution
 
