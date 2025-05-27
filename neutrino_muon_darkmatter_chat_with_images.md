@@ -225,7 +225,7 @@ an electron with 35 MeV of kinetic energy is highly relativistic, moving at more
 
 A diagram of the electron energy spectrum from muon decay at rest:
 
-![electron energy spectrum from muon decay at rest](_images/electron_energy_spectrum_from_muon_decay_at_rest.png)
+![electron energy spectrum from muon decay at rest](__images/electron_energy_spectrum_from_muon_decay_at_rest.png)
 
 
 ## 3. Gamma Rays vs Neutrinos
