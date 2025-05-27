@@ -223,6 +223,11 @@ an electron with 35 MeV of kinetic energy is highly relativistic, moving at more
 
 - The rest of the energy goes into the neutrinos, which escape detection in most experiments.
 
+A diagram of the electron energy spectrum from muon decay at rest:
+
+![electron energy spectrum from muon decay at rest](_images/electron_energy_spectrum_from_muon_decay_at_rest.png)
+
+
 ## 3. Gamma Rays vs Neutrinos
 
 | Property        | Neutrino                        | Gamma Ray (Photon)               |
