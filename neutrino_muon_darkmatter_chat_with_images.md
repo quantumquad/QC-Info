@@ -223,7 +223,23 @@ an electron with 35 MeV of kinetic energy is highly relativistic, moving at more
 
 - The rest of the energy goes into the neutrinos, which escape detection in most experiments.
 
-A diagram of the electron energy spectrum from muon decay at rest:
+#### Michel spectrum
+
+This is a plot of the Michel spectrum, which describes the probability distribution of electron kinetic energy from muon decay at rest.
+
+- The horizontal axis shows the electron kinetic energy (up to ~52.8 MeV).
+
+- The vertical axis shows the normalized probability density.
+
+As you can see:
+
+- The spectrum peaks around 35 MeV, aligning with our estimate of the average energy.
+
+- There is a smooth drop-off toward the maximum energy (~52.8 MeV), where both neutrinos take minimal energy.
+
+- Very low-energy electrons are also possible, though less likely.
+
+This curve captures the essence of three-body decay randomness under weak interaction dynamics. Let me know if you'd like to overlay the corresponding speed or Lorentz factor of the electron. 
 
 ![electron energy spectrum from muon decay at rest](__images/electron_energy_spectrum_from_muon_decay_at_rest.png)
 
