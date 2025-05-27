@@ -332,6 +332,7 @@ This refined spectrum matches what is observed in precision experiments. It demo
 
 ![detailed_michel_spectrum with electron_mass_effects](__images/detailed_michel_spectrum with electron_mass_effects.png)
 
+![electron energy spectrum from muon decay at rest](__images/electron_energy_spectrum_from_muon_decay_at_rest.png)
 
 
 ## 3. Gamma Rays vs Neutrinos
