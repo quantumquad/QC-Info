@@ -229,7 +229,7 @@ The diagram below illustrates the electron energy spectrum from muon decay at re
 
 #### Michel spectrum
 
-Below is a plot of the Michel spectrum, which describes the probability distribution of electron kinetic energy from muon decay at rest.
+It is a plot of the Michel spectrum, which describes the probability distribution of electron kinetic energy from muon decay at rest.
 
 - The horizontal axis shows the electron kinetic energy (up to ~52.8 MeV).
 
@@ -330,7 +330,7 @@ Compared to the simplified version:
 
 This refined spectrum matches what is observed in precision experiments. It demonstrates just how well theoretical predictions from quantum field theory align with actual detector measurements, and how subtle corrections matter when testing the Standard Model to high precision.
 
-
+![detailed_michel_spectrum with electron_mass_effects](__images/detailed_michel_spectrum with electron_mass_effects.png)
 
 
 
